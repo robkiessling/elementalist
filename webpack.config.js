@@ -15,17 +15,13 @@ module.exports = {
         // Takes the src/index.html and builds it in dist
         new HtmlWebpackPlugin({
             hash: true,
-            template: 'src/index.html',
-            filename: 'index.html'
+            template: path.resolve(__dirname, 'src', 'index.html'),
         })
     ],
     devServer: {
         static: {
             // Local filesystem directory where static html files are served
-            directory: path.resolve(__dirname, 'src'),
-
-            // Where webpack-dev-server serves bundle which is created in memory -- not sure this is needed tho?
-            publicPath: '/dist/'
+            directory: path.resolve(__dirname, 'src')
         },
 
         // Don't really like live reloading; prefer to reload myself
