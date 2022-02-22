@@ -1,4 +1,2 @@
-
-import './styles/app.scss'
-
-console.log('hello world!');
+import './stylesheets/app.scss'
+import './game/game.js';

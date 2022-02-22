@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
-    "start": "node server.js",
+    "start": "node server.cjs",
     "heroku-postbuild": "webpack --mode production",
     "deploy-github": "npm run build && gh-pages -d dist"
   },

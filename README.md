@@ -42,7 +42,7 @@ App can be viewed at [https://elementalist.herokuapp.com/](https://elementalist.
 
 Code relevant to Heroku deployment:
 - `express` package
-- `server.js` file
+- `server.cjs` file
 - `start` script
 - `heroku-postbuild` script
 - `Procfile`
