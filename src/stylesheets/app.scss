@@ -1,14 +1,41 @@
 @import 'normalize';
 @import 'boilerplate';
+@import 'colors';
 
-#app {
-  color: red;
+html, body {
+  height: 100%;
+  font-size: 16px;
 }
 
-//html, body, #app {
-//  height: 100%;
-//}
-//
-//html {
-//  font-size: 16px;
-//}
+body {
+  background: black;
+}
+
+#aspect-container {
+  // Locking overall container to a 16/9 aspect ratio
+  // https://stackoverflow.com/a/20593342/4904996
+  width: 100vw;
+  height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+  max-height: 100vh;
+  max-width: 177.78vh; /* 16/9 = 1.778 */
+  margin: auto;
+  position: absolute;
+  top:0;bottom:0; /* vertical center */
+  left:0;right:0; /* horizontal center */
+
+  display: flex;
+  flex-direction: column;
+}
+
+#top-bar {
+  min-height: 32px;
+  background: $colorB;
+}
+#main-content {
+  flex: 1; // Fill remaining height
+  background: $colorG;
+}
+#bottom-bar {
+  min-height: 64px;
+  background: $colorB;
+}

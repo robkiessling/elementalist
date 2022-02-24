@@ -3,7 +3,7 @@
  * unusable. We create our own workaround for these methods by basing the intervals/timers on elapsed time.
  */
 
-import {formatDuration} from "./utilities.js";
+import {formatDuration} from "../utilities/math.js";
 
 /* Time based variables, all in milliseconds */
 let now = Date.now() || (new Date).getTime(); // Current tick's time

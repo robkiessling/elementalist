@@ -10,4 +10,4 @@ const displayInterval = clock.setInterval((iterations, period) => {
 clock.setTimeout(() => {
     console.log('stopping the display!');
     clock.clearInterval(displayInterval);
-}, 5000)
+}, 5000);
