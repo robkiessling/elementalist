@@ -1,4 +1,4 @@
-export const database = {
+export const DATABASE = {
     properties: {
         databaseName: 'units',
         columnDefaults: {
@@ -7,7 +7,8 @@ export const database = {
                 maxHealth: 1,
                 maxMana: 0,
                 manaRegen: 0,
-                attackSpeed: 0
+                attacksPerSecond: 0.5,
+                attackDamage: 10
             }
         }
     },
@@ -19,6 +20,13 @@ export const database = {
                 maxHealth: 100,
                 maxMana: 100,
                 manaRegen: 10
+            }
+        },
+        warrior: {
+            name: 'Warrior',
+            stats: {
+                maxHealth: 200,
+                attackDamage: 30
             }
         }
     }
